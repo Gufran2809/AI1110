@@ -1,0 +1,48 @@
+\documentclass{article}
+
+\usepackage{listings}
+
+\begin{document}
+
+\title{Audio Player Program Report}
+\author{Your Name}
+
+\maketitle
+
+\section{Introduction}
+This report describes the implementation and usage of an audio player program written in Python. The program allows the user to play, pause, unpause, and randomly select audio files from a specified directory. The Pygame library is utilized for audio playback.
+
+\section{Code Description}
+The program consists of the following functions:
+
+\begin{itemize}
+  \item \texttt{play\_audio(file\_path)}: Loads and plays the audio file specified by \texttt{file\_path}.
+  \item \texttt{pause\_audio()}: Pauses the currently playing audio.
+  \item \texttt{unpause\_audio()}: Unpauses the currently paused audio.
+  \item \texttt{play\_random\_audio(directory, previous\_file)}: Selects a random audio file from the specified \texttt{directory} and plays it, excluding the \texttt{previous\_file} from the selection.
+  \item \texttt{choose\_random\_audio(directory, previous\_file)}: Selects a random audio file from the specified \texttt{directory}, excluding the \texttt{previous\_file}.
+\end{itemize}
+
+The program starts by initializing the Pygame mixer and loading the first random audio file to play. The user is then prompted for commands in a loop.
+
+\section{Usage}
+To use the program, follow these steps:
+
+\begin{enumerate}
+  \item Specify the directory where the audio files are located by modifying the \texttt{directory} variable.
+  \item Run the program.
+  \item Enter the following commands when prompted:
+  \begin{itemize}
+    \item \texttt{playAgain}: Resumes playback of the current audio file.
+    \item \texttt{pause}: Pauses the currently playing audio.
+    \item \texttt{unpause}: Unpauses the currently paused audio.
+    \item \texttt{randomNew}: Selects a new random audio file and plays it.
+    \item \texttt{quit}: Stops the audio playback and exits the program.
+  \end{itemize}
+\end{enumerate}
+
+\section{Conclusion}
+The audio player program provides basic functionality for playing, pausing, and selecting random audio files. It can be extended with additional features such as volume control, playlist management, and graphical user interface (GUI) integration.
+
+\end{document}
+
